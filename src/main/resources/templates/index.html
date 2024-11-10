@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Basic reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Fullscreen centered layout */
+        body, html {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+        }
+
+        /* Login container styling */
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* SVG Logo styling */
+        .login-logo {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 1rem;
+            fill: #3498db;
+        }
+
+        /* Heading */
+        .login-container h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Google Sign-In button styling */
+        .btn-google {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #4285f4;
+            border: none;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0.8rem;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-google:hover {
+            background-color: #357ae8;
+        }
+
+        /* Google icon in button */
+        .google-icon {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+        }
+
+        /* Small text */
+        .small-text {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 1.5rem;
+        }
+
+        /* Link styling */
+        .small-text a {
+            color: #4285f4;
+            text-decoration: none;
+        }
+
+        .small-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- SVG Icon as Logo -->
+        <svg viewBox="0 0 24 24" class="login-logo">
+            <path fill-rule="evenodd" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm.044-5.213c2.445 0 4.267-1.551 4.556-3.781v-1.891h-4.519v1.89h2.602a2.893 2.893 0 0 1-2.724 1.93c-1.194 0-2.677-1.1-2.677-2.843 0-1.621 1.161-2.876 2.677-2.876.739 0 1.413.279 1.922.736l1.399-1.376a4.744 4.744 0 1 0-3.236 8.212z"></path>
+        </svg>
+
+        <!-- Page Title -->
+        <h1>Sign in to Your Account</h1>
+
+        <!-- Google Sign-In Button -->
+        <a href="/oauth2/authorization/google" class="btn btn-google">
+            <svg viewBox="0 0 24 24" class="google-icon">
+                <path fill="#fff" d="M21.35 11.1h-9.36v2.89h5.39c-.46 2.11-2.31 3.61-4.58 3.61-2.77 0-5.03-2.27-5.03-5.06s2.26-5.06 5.03-5.06c1.27 0 2.43.47 3.32 1.24l2.2-2.2C15.94 4.57 14.05 3.7 12 3.7c-4.42 0-8 3.58-8 8s3.58 8 8 8c4.06 0 7.4-2.94 7.4-7.2 0-.47-.06-.83-.12-1.2z"/>
+            </svg>
+            Sign in with Google
+        </a>
+
+        <!-- Terms & Privacy Notice -->
+        <div class="small-text">
+            <p>By signing in, you agree to our <a href="#">Terms & Privacy Policy</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
