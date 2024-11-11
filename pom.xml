@@ -42,27 +42,12 @@
 			<artifactId>spring-boot-starter-oauth2-client</artifactId>
 		</dependency>
 
-		<!-- Spring Security for Remember-Me functionality -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-
-		<!-- Spring Transactional Support (for PersistentTokenRepository) -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-tx</artifactId>
-		</dependency>
-
 		<!-- Thymeleaf for HTML templating -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 	</dependencies>
-
-
-
 	<build>
 		<plugins>
 			<plugin>
@@ -71,5 +56,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
